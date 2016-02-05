@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int cels,fahr;
+  cout <<"Introduce a temperature in Fahrenheit: ";
+  cin >>fahr;
+  cels=5*(fahr-32)/9;
+  cout <<endl;
+  cout <<"A temperature of "<<fahr<<" degrees Fahrenheit is "<<cels<<" in Celsius.";
+  cout <<endl;
+  if (cels>100){
+    cout <<"Water boils at this temperature(under typical conditions).";
+  }
+  else
+  cout <<"Water does not boil at this temperature (under typical conditions).";
+}
