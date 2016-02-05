@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  float number1, number2,add,sub,mult,div1;
+  cout <<"Introduce a FLOAT number: ";
+  cin>>number1;
+  cout <<"Introduce another FLOAT number: ";
+  cin>>number2;
+  cout <<endl;
+  add=number1+number2;
+  cout <<"The addition of these two numbers is: "<<add<<endl;
+  sub=number1-number2;
+  cout <<"The substraction of these two numbers is: "<<sub<<endl;
+  mult=number1*number2;
+  cout <<"The product of these two numbers is: "<<mult<<endl;
+  div1=number1/number2;
+  cout <<"The integer division of these two numbers is: "<<div1<<endl;
+  }
