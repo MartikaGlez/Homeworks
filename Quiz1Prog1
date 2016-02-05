@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  float rad,hght,vol;
+  double PI=3.1416;
+  cout<<"This program calculates de volume of a cylinder.";
+  cout<<"Introduce a FLOAT value for the radius: ";
+  cin>>rad;
+  cout<<"Introduce a FLOAT value for the height of the cylinder";
+  cin>>hght;
+  vol=PI*(rad*rad)*hght;
+  cout<<"The volume of the cylinder is: "<<vol;
+}
