@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int number1, number2,mult,div1,div2;
+  cout <<"Introduce an integer number ";
+  cin>>number1;
+  cout <<endl;
+  cout <<"Introduce another integer number ";
+  cin>>number2;
+  cout <<endl;
+  mult=number1*number2;
+  cout <<"The product of these two numbers is: "<<mult;
+  div1=number1/number2;
+  cout <<endl;
+  cout <<"The integer division of these two numbers is: "<<div1;
+  div2=(number1)%(number2);
+  cout <<endl;
+  cout <<"The remainder from division of the two numbers is: "<<div2;
+  cout <<endl;
+}
