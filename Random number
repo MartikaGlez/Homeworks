@@ -1,0 +1,28 @@
+#include <iostream> // libreria de algoritmos estandar
+#include <stdlib.h> //esta libreria sirve para el uso de rand()
+#include <time.h> //libreria para saber la hora actual del sistema
+using namespace std;
+
+int main ()
+{
+  int num, ans,contad;
+  srand (time(NULL));
+  num=rand() % 100+1;
+  contad=0;
+  cout << "Guess the number!. It is between 1 and 100:  ";
+  do{
+    cin >> ans;
+    contad=contad+1;
+    if (num < ans)
+    {
+      cout << "Your number is to high, try again: ";
+    }
+    else if (num > ans)
+     {
+      cout << "Your number is too low, try again: ";
+    }
+  } while (num != ans);
+cout << "You got it. The number was: " << ans << endl;
+cout << "You made "<<contad<<" guesses to get the right number." << endl;
+  return 0;
+}
