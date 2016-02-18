@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int numb;
+int stars (int x)
+{ int cont=0;
+  do {
+    cont=cont+1;
+    cout<<'*';
+  } while(cont != x);
+}
+int main()
+{
+  cout<<"How many '*' would you like to print? ";
+  cin>>numb;
+  stars(numb);
+}
