@@ -1,0 +1,33 @@
+#include <Servo.h>
+
+Servo myservo;
+Servo Servo2;
+Servo Servo3;// create servo object to control a servo
+
+int pot1 = 0;
+int pot2 = 1;
+int pot3 = 2;
+int val; 
+int val2;
+int val3; 
+
+void setup() {
+  myservo.attach(9);
+  Servo2.attach(8);
+  Servo3.attach(7);
+}
+
+void loop() {
+  val = analogRead(pot1);           
+  val = map(val, 0, 1023, 0, 179);    
+  myservo.write(val);                  
+  delay(15);
+  val2 = analogRead(pot2);
+  val2 = map(val2, 0, 1023, 0, 179);
+  Servo2.write(val2);
+  delay(15);
+  val3 = analogRead(pot3);
+  val3 = map(val3, 0, 1023, 0, 179);
+  Servo3.attach(val3);
+  delay(15);
+}
