@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool palindrom(string cadena, int size)
+{
+  for(i=0, i< (size/2), i++)
+  {
+  return True;
+  }
+return False;
+}
+
+int main()
+{
+  string cadena;
+  int size;
+cout<< "This program will determine if the word/phrase you are typying is a palindrome or not."<<endl;
+cout<<"Give me a word/phrase: "<<endl;
+getline(cin, cadena);
+}
