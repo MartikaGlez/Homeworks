@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int triangulos (int size)
+{
+	for(int i=1; i<=size; i++)
+		{
+			for(int n=1; n<i+1;n++)
+			cout<<"T";
+			cout<<endl;
+		}
+	for(int i=size-1; i>=1; i--)
+		{
+			for(int n=1; n<i+1;n++)
+			cout<<"T";
+			cout<<endl;
+		}
+}
+
+int main()
+{
+	int tamano;
+	cout<< "Give me the size you want for yout¿r triangle: ";
+	cin>> tamano;
+	triangulos(tamano);
+return 0;
+}
