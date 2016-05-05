@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int value1, value2;
+
+int euclid (int a, int b)
+{
+  int c;
+  do {
+    if (a==0)
+    return a;
+  else
+  {
+    c=b;
+    b= a%b;
+    a=c;
+  }
+}  while (b !=0);
+return c;
+}
+
+int main ()
+{
+cout <<"This is a program that calculate the greatest common denominator of two positive integers using Euclid's algorithm"<<endl;
+cout <<"Introduce the first number: ";
+cin >>value1;
+cout<<"Give me the second number: ";
+cin >>value2;
+cout <<"The greatest common denominator between: " <<value1 <<" and " <<value2 <<" is: "<<euclid (value1, value2);
+}
