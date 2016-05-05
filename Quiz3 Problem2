@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int numb;
+
+int fibonacci(int n){
+  if(n == 0){
+    return 0;
+  }
+  if(n==1){
+    return 1;
+  }
+  return fibonacci(n-1)+fibonacci(n-2);
+}
+
+int main()
+{
+  cout<<"Introduce a non-negative parameter: ";
+  cin>>numb;
+  cout<<"The fibonacci ("<<numb<<") would return "<<fibonacci(numb);
+}
