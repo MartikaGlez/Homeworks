@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main ()
+{
+  float array[10];
+  float addition=0, square=0, deviation, average;
+  for (int a=0; a<10; a++)
+  {
+    cout<<"Introduce a number ( "<<(a+1)<<" ): ";
+    cin>>array[a];
+  }
+for (int a=0; a<10; a++)
+{
+  addition+=array[a];
+  square+=(array[a])*(array[a]);
+}
+  deviation= sqrt(square/10);
+  average=(addition/10);
+  cout<<"the Addition is equal to: "<<addition<<endl;
+  cout<<"The average of all your numbers is equal to: "<<average<<endl;
+  cout<<"The standard deviation is equal to: "<<deviation<<endl;
+
+  return 0;
+}
