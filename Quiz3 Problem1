@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+double num1,val1,num2,val2;
+
+double distance(int x1, int y1, int x2, int y2)
+{
+  double d;
+  d=sqrt(pow(x2-x1,2)+ pow(y2-y1,2));
+  return d;
+}
+
+int main(){
+cout<<"This program calculates de distance between two points."<<endl;
+cout<<"Introduce x1: ";
+cin>>num1;
+cout<<"Introduce y1: ";
+cin>>val1;
+cout<<"Introduce x2: ";
+cin>>num2;
+cout<<"Introduce y2: ";
+cin>>val2;
+cout<<"The distance between the two points is: "<<distance(num1,val1,num2,val2);
+}
