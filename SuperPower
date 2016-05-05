@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int num,num2;
+int superpower (int x, int y)
+{ int a=1, cont=0;
+  do{
+    cont=cont+1;
+    a=x*a;
+  } while(cont != y);
+  return a;
+}
+int main()
+{
+cout<<"Introduce the first number: ";
+cin>>num;
+cout<<"Introduce the number that would be the raised power: ";
+cin>>num2;
+cout<<"The first parameter raised to the power of the second is: "<<superpower (num, num2);
+}
